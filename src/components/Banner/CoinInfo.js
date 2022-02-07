@@ -79,16 +79,17 @@ const CoinInfo = ({ coin }) => {
                                         {
                                             data: historicData.map((coin) => coin[1]),
                                             label: `Price ( Past ${days} Days) in ${currency}`,
-                                            borderColor: '#EEBC1D'
+                                            borderColor: '#EEBC1D',
+                                            borderWidth: 1
                                         }
                                     ],
                                 }}
                                 options={{
-                                    element: {
+                                    elements: {
                                         point: {
                                             radius: 1
-                                        },
-                                    },
+                                        }
+                                    }
                                 }}
                             />
                             <div style={{
